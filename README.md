@@ -9,7 +9,7 @@ A simple solution for sharing the clipboard between 2 computers over the Interne
 
 ## Usage
 
-1. Download the latest release from the [Releases]() page.
+1. Download the latest release from the [Releases](https://github.com/mwiedemeyer/CloudClipboard/releases) page.
 2. Extract the downloaded zip file to a folder of your choice.
 3. Open `CloudClipboard.dll.config` and set the required values.
    1. You need an **Azure Storage Account**. Set the connection string in the `StorageConnectionString` field.
@@ -17,6 +17,8 @@ A simple solution for sharing the clipboard between 2 computers over the Interne
    3. Create an **Azure Service Bus Basic namespace** and set the connection string to the `ServiceBusConnectionString` field.
    4. Set the local and remote computer names in the `LocalName` and `RemoteName` fields. On each computer, the `LocalName` should be unique and the `RemoteName` should match the `LocalName` of the other computer.
 4. Run `CloudClipboard.exe`.
+   1. Put a link in `shell:startup` to start the app automatically on login.
+5. Copy something on one computer and it should be available on the other computer's clipboard.
 
 ## Why? (and why is it a Windows Forms app?)
 
