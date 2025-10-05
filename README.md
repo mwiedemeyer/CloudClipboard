@@ -16,7 +16,7 @@ A simple solution for sharing the clipboard between 2 computers over the Interne
    2. Create a blob container and set the name to the `StorageContainer` field.
    3. Create an **Azure Service Bus Basic namespace** and set the connection string to the `ServiceBusConnectionString` field.
    4. Set the local and remote computer names in the `LocalName` and `RemoteName` fields. On each computer, the `LocalName` should be unique and the `RemoteName` should match the `LocalName` of the other computer.
-4. Run `CloudClipboard.exe`.
+4. Run `CloudClipboard.exe`. The tool will run in the background and has no user interface. You can close it from the Task Manager.
    1. Put a link in `shell:startup` to start the app automatically on login.
 5. Copy something on one computer and it should be available on the other computer's clipboard.
 
